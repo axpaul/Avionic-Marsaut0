@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2021-06-01T17:20:45Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.6.2"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.57,
+        "LayerNumber": 4,
+        "Name": {
+            "ProjectId": "IHM"
+        },
+        "Owner": "Paul Miailhe <paul.miailhe@gmail.com>",
+        "Size": {
+            "X": 42.962,
+            "Y": 42.2
+        }
+    }
+}
