@@ -1,0 +1,49 @@
+*Sep 16, 2013
+*ECN S13-1987, Rev. A
+*File Name: Si1308EDL_PS.txt, Si1308EDL_PS.lib
+*This document is intended as a SPICE modeling guideline and does not
+*constitute a commercial product datasheet. Designers should refer to the
+*appropriate datasheet of the same number for guaranteed specification
+*limits.
+.SUBCKT Si1308EDL D G S 
+x1  D G S Si1308EDL_mos
+x2  G S   Si1308EDL_esd
+.ENDS  Si1308EDL
+.SUBCKT Si1308EDL_mos D G S 
+M1 3 GX S S NMOS W= 195995u L= 0.25u 
+M2 S GX S D PMOS W= 195995u L= 2.223e-07 
+R1 D 3 10.60e-02 TC=4.034e-03 3.296e-06 
+CGS GX S 5.613e-11 
+CGD GX D 3.744e-12 
+RG G GY 1m 
+RTCV 100 S 1e6 TC=1.995e-04 -3.059e-08 
+ETCV GX GY 100 200 1 
+ITCV S 100 1u 
+VTCV 200 S 1 
+DBD S D DBD 195995u 
+**************************************************************** 
+.MODEL NMOS NMOS ( LEVEL = 3 TOX = 3e-8 
++ RS = 0 KP = 3.304e-05 NSUB = 1.10e+17 
++ KAPPA = 4.332e-02 NFS = 6.020e+11 
++ LD = 0 IS = 0 TPG = 1 ) 
+*************************************************************** 
+.MODEL PMOS PMOS ( LEVEL = 3 TOX = 3e-8 
++NSUB = 5.064e+16 IS = 0 TPG = -1  ) 
+**************************************************************** 
+.MODEL DBD D ( 
++FC = 0.1 TT = 3.072e-08 T_MEASURED = 25 BV = 31 
++RS = 1.069e-02 N = 1.850e+00 IS = 1.000e-06 
++EG = 1.151e+00 XTI = -4.420e+00 TRS1 = 1.250e-03 
++CJO = 2.612e-10 VJ = 8.121e-01 M = 4.989e-01 ) 
+.ENDS Si1308EDL_mos
+.subckt Si1308EDL_esd 1 2
+r1 1 9 4.817e+05 TC= -2.166e-04 
+d1 9 2 dleak 
+.MODEL dleak d (IS = 3.584e-10 XTI = 6.055e+02 EG = 1.17 
++ T_measured = 25 TBV1 = 0 N = 4.859e+01 BV = 50)
+r2 1 10 6.367e+01 TC= -2.026e-03 
+d3 11 10 dout 
+d4 11 2 dout 
+.MODEL dout D (IS = 2.299e-10 XTI = -2.309e+01 EG = 1.17 
++ T_measured = 25 TBV1 = 3.324e-03 N = 2.592e+00 BV = 1.319e+01 )
+.ends Si1308EDL_esd
