@@ -6,9 +6,12 @@
 
 <p>The electronic architecture of our rocket is divided into two parts, the flight controller (Sequencer) and the payload. </p>
         
-        - Branch APU : The APU (Acquisition Process Unit) board is dedicated to the acquisition, storage and transmission of data in the rocket.
-        - Branch SEQ : The SEQ board (the flight controller) is dedicated to the control of the different actuators according to the rocket's flight status.
-        - Branch ALIM : The ALIM board (the power supply board) is the board in charge of the electrical distribution and the control of the battery status.
+        - Branch APU : The APU (Acquisition Process Unit) board is dedicated to the acquisition, 
+        storage and transmission of data in the rocket.
+        - Branch SEQ : The SEQ board (the flight controller) is dedicated to the control of the different actuators 
+        according to the rocket's flight status.
+        - Branch ALIM : The ALIM board (the power supply board) is the board in charge of the electrical distribution
+         and the control of the battery status.
         - Branch MOTOR : .
         - Branch IHM : .
         - Branch INT_LTS : .
