@@ -1,6 +1,3 @@
-
-Marsaut_0 experimental rocket avionic (On-board electronics) created by Mines Space, Version 2021 launched at C'space
-
 <h1>Avionic Marsaut 0</h1>
         
 <h2>Marsaut_0 experimental rocket avionic (On-board electronics) created by Mines Space, Version 2021 launched at C'space</h2>
