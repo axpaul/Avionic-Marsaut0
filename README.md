@@ -6,17 +6,21 @@
 
 <p>The electronic architecture of our rocket is divided into two parts, the flight controller (Sequencer) and the payload. </p>
         
-        - Branch APU : The APU (Acquisition Process Unit) board is dedicated to the acquisition, 
+        -Branch APU : The APU (Acquisition Process Unit) board is dedicated to the acquisition, 
         storage and transmission of data in the rocket.
 
-        - Branch SEQ : The SEQ board (the flight controller) is dedicated to the control of the different 
+        -Branch SEQ : The SEQ board (the flight controller) is dedicated to the control of the different 
         actuators according to the rocket's flight status.
 
-        - Branch ALIM : The ALIM board (the power supply board) is the board in charge of the electrical 
+        -Branch ALIM : The ALIM board (the power supply board) is the board in charge of the electrical 
         distribution and the control of the battery status.
 
-        - Branch MOTOR : The MOTOR board is equipped with motor drivers for parachute deployment control.
+        -Branch MOTOR : The MOTOR board is equipped with motor drivers for parachute deployment control.
 
-        - Branch IHM : The HMI card is the card dedicated to the control and restitution of information to the user.
-        - Branch INT_LTS : .
-        - Branch LINK : .
+        -Branch IHM : The HMI card is the card dedicated to the control and restitution 
+        of information to the user.
+
+        -Branch INT_LTS : The INT_LTS card is an interface card with the Lora TTGO-T BEAM card.
+
+        -Branch LINK : The LINK card allows to link all the actuators and sensors 
+        installed in the rocket to the electronics .
