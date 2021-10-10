@@ -15,7 +15,8 @@
         - Branch ALIM : The ALIM board (the power supply board) is the board in charge of the electrical 
         distribution and the control of the battery status.
 
-        - Branch MOTOR : .
-        - Branch IHM : .
+        - Branch MOTOR : The MOTOR board is equipped with motor drivers for parachute deployment control.
+
+        - Branch IHM : The HMI card is the card dedicated to the control and restitution of information to the user.
         - Branch INT_LTS : .
         - Branch LINK : .
