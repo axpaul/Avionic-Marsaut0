@@ -2,7 +2,7 @@
         
 <h2>Marsaut_0 experimental rocket avionic (On-board electronics) created by Mines Space, Version 2021 launched at C'space</h2>
 
-*Open hardware license project   *
+*Open hardware license project*
 
 <p>The electronic architecture of our rocket is divided into two parts, the flight controller (Sequencer) and the payload.
 You can find the CAD of all the cards on this link : https://grabcad.com/library/avionics-system-for-marsaut-0-rocket-mines-space-1 </p>
