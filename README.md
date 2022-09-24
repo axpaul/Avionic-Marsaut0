@@ -4,26 +4,7 @@
 
 *Open hardware license project*
 
-<p>The electronic architecture of our rocket is divided into two parts, the flight controller (Sequencer) and the payload.
-You can find the CAD of all the cards on this link : https://grabcad.com/library/avionics-system-for-marsaut-0-rocket-mines-space-1 </p>
-        
-        - Branch APU : The APU (Acquisition Process Unit) board is dedicated to the acquisition, 
-        storage and transmission of data in the rocket.
-
-        - Branch SEQ : The SEQ board (the flight controller) is dedicated to the control of the different 
-        actuators according to the rocket's flight status.
-
-        - Branch ALIM : The ALIM board (the power supply board) is the board in charge of the electrical 
-        distribution and the control of the battery status.
-
-        - Branch MOTOR : The MOTOR board is equipped with motor drivers for parachute deployment control.
-
-        - Branch IHM : The HMI card is the card dedicated to the control and restitution 
-        of information to the user.
-
-        - Branch INT_LTS : The INT_LTS card is an interface card with the Lora TTGO-T BEAM card.
-
-        - Branch LINK : The LINK card allows to link all the actuators and sensors 
-        installed in the rocket to the electronics .
+<p>The architecture of this avionics is very simple. It is composed of: a Rapsberry Pico hosting the RP2040 microcontroller. A commercial Pico-10DOF-IMU board which includes an ICM20948 (3-axis gyroscope, 3-axis accelerometer, and 3-axis magnetometer) and a LPS22HB barometric pressure sensor, for sensing the atmospheric pressure of the environment. A home-made interface board, the berryRocket Electronic, including the whole power supply by regulator, buzzer and analog accelerometer using a limit switch.  
+You can find the CAD of all the cards on this link :  </p>
 
 ![alt tag](https://github.com/axpaul/Avionic_Marsaut0/blob/3b93ca48c7310d51b4f38008a7691d3c2e0785c7/Pictures/1.png)
