@@ -27,3 +27,5 @@ You can find the CAD of all the cards on this link : https://grabcad.com/library
         installed in the rocket to the electronics .
         
 ![alt tag](https://github.com/axpaul/Avionic_Marsaut0/blob/3b93ca48c7310d51b4f38008a7691d3c2e0785c7/Pictures/1.png)
+
+![alt tag](https://github.com/axpaul/Avionic-Marsaut0/blob/main/Pictures/Cc-by-nc-sa_icon.svg.png)
