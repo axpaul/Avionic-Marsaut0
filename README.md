@@ -1,31 +1,87 @@
-<h1>Avionic Marsaut 0</h1>
-        
-<h2>Marsaut_0 experimental rocket avionic (On-board electronics) created by Miailhe Paul, Version 2021 launched at C'space</h2>
+# Avionic Marsaut 0
 
-*CC BY-NC-SA 4.0*
+## Experimental Rocket Avionics for Marsaut 0
 
-<p>The electronic architecture of our rocket is divided into two parts, the flight controller (Sequencer) and the payload.
-You can find the CAD of all the cards on this link : https://grabcad.com/library/avionics-system-for-marsaut-0-rocket-mines-space-1 </p>
-        
-        - Branch APU : The APU (Acquisition Process Unit) board is dedicated to the acquisition, 
-        storage and transmission of data in the rocket.
+The **Marsaut 0 avionics system**, designed and developed by Paul Miailhe in 2021, was successfully launched during the C'Space event. This project is licensed under **CC BY-NC-SA 4.0**.
 
-        - Branch SEQ : The SEQ board (the flight controller) is dedicated to the control of the different 
-        actuators according to the rocket's flight status.
+The avionics system is based on an **STM32F303K8** microcontroller, which provides high-performance real-time control for the rocket's systems. It integrates essential sensors, motor drivers, and interface boards to ensure a robust and reliable solution for experimental rocketry.
 
-        - Branch ALIM : The ALIM board (the power supply board) is the board in charge of the electrical 
-        distribution and the control of the battery status.
+You can access the CAD designs for all the boards [here on GrabCAD](https://grabcad.com/library/avionics-system-for-marsaut-0-rocket-mines-space-1).
 
-        - Branch MOTOR : The MOTOR board is equipped with motor drivers for parachute deployment control.
+---
 
-        - Branch IHM : The HMI card is the card dedicated to the control and restitution 
-        of information to the user.
+## System Overview
 
-        - Branch INT_LTS : The INT_LTS card is an interface card with the Lora TTGO-T BEAM card.
+The electronic architecture of the rocket is divided into the following branches:
 
-        - Branch LINK : The LINK card allows to link all the actuators and sensors 
-        installed in the rocket to the electronics .
-        
-![alt tag](https://github.com/axpaul/Avionic_Marsaut0/blob/3b93ca48c7310d51b4f38008a7691d3c2e0785c7/Pictures/1.png)
+- **Branch APU** (Acquisition Process Unit):  
+  Responsible for acquiring, storing, and transmitting data, equipped with:  
+  - **MPU6050**: A 6-axis gyroscope and accelerometer for attitude measurement.  
+  - **BMP280**: A barometric pressure sensor for altitude estimation.
 
-![alt tag](https://github.com/axpaul/Avionic-Marsaut0/blob/main/Pictures/Cc-by-nc-sa_icon.svg.png)
+- **Branch SEQ** (Flight Controller):  
+  The core control board, based on the **STM32F303K8**, which manages actuators and flight status monitoring.
+
+- **Branch ALIM** (Power Supply):  
+  Handles power distribution and monitors the battery's state of charge.
+
+- **Branch MOTOR**:  
+  Includes two **VNH5019 motor drivers** (by STMicroelectronics) for controlling the parachute deployment system.
+
+- **Branch HMI** (Human-Machine Interface):  
+  Provides a user interface for controlling the system and displaying key information.
+
+- **Branch INT_LTS**:  
+  Serves as the interface for integrating the **LoRa TTGO-T BEAM** communication module.
+
+- **Branch LINK**:  
+  Connects all actuators and sensors in the rocket to the avionics for seamless operation.
+
+---
+
+## Key Components
+
+### **Microcontroller**
+- **STM32F303K8**:  
+  - ARM Cortex-M3 core with floating-point unit (FPU).  
+  - Provides real-time control and data processing capabilities.
+
+### **Sensors**
+- **MPU6050**:  
+  - A 6-axis IMU for measuring acceleration and angular velocity.  
+  - Enables precise attitude and motion tracking.
+- **BMP280**:  
+  - A barometric pressure sensor for accurate altitude estimation.
+
+### **Motor Drivers**
+- **VNH5019** (by STMicroelectronics):  
+  - High-power motor drivers capable of handling currents up to 12A.  
+  - Used to control the parachute deployment mechanism with precision.
+
+---
+
+## Features and Applications
+
+- **Real-time Control**:  
+  The STM32F303K8 ensures smooth operation of actuators and sensors.  
+
+- **Integrated Sensors**:  
+  MPU6050 and BMP280 provide reliable data for navigation and altitude tracking.
+
+- **High-Performance Motor Control**:  
+  The VNH5019 motor drivers ensure precise parachute deployment and safety.
+
+- **Seamless Communication**:  
+  LoRa TTGO-T BEAM module enables efficient data transmission to ground stations.
+
+---
+
+## Visual Overview
+
+### Avionics System CAD
+You can find the full CAD designs of the avionics system on [GrabCAD](https://grabcad.com/library/avionics-system-for-marsaut-0-rocket-mines-space-1).
+
+### Images
+![Marsaut 0 Avionics](https://github.com/axpaul/Avionic_Marsaut0/blob/3b93ca48c7310d51b4f38008a7691d3c2e0785c7/Pictures/1.png)
+
+![Creative Commons License](https://github.com/axpaul/Avionic-Marsaut0/blob/main/Pictures/Cc-by-nc-sa_icon.svg.png)
