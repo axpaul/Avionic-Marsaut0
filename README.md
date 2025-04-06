@@ -17,28 +17,62 @@ You can access the CAD designs for all the boards [here on GrabCAD](https://grab
 
 The electronic architecture of the rocket is divided into the following branches:
 
+---
+
 - **Branch APU** (Acquisition Process Unit):  
   Responsible for acquiring, storing, and transmitting data, equipped with:  
   - **MPU6050**: A 6-axis gyroscope and accelerometer for attitude measurement.  
   - **BMP280**: A barometric pressure sensor for altitude estimation.
 
+<p align="center">
+  <img src="Pictures/3.png" alt="Carte APU" width="300"/>
+</p>
+
+---
+
 - **Branch SEQ** (Flight Controller):  
   The core control board, based on the **STM32F303K8**, which manages actuators and flight status monitoring.
 
+  <p align="center">
+  <img src="Pictures/4.png" alt="Carte SEQ" width="300"/>
+</p>
+
+---
+
 - **Branch ALIM** (Power Supply):  
   Handles power distribution and monitors the battery's state of charge.
+  
+  <p align="center">
+  <img src="Pictures/2.png" alt="Carte ALIM" width="300"/>
+</p>
+
+---
 
 - **Branch MOTOR**:  
   Includes two **VNH5019 motor drivers** (by STMicroelectronics) for controlling the parachute deployment system.
 
-- **Branch HMI** (Human-Machine Interface):  
-  Provides a user interface for controlling the system and displaying key information.
+  <p align="center">
+  <img src="Pictures/5.png" alt="Carte MOTOR" width="300"/>
+</p>
 
-- **Branch INT_LTS**:  
-  Serves as the interface for integrating the **LoRa TTGO-T BEAM** communication module.
+---
 
 - **Branch LINK**:  
   Connects all actuators and sensors in the rocket to the avionics for seamless operation.
+
+    <p align="center">
+  <img src="Pictures/6.png" alt="Carte LINK" width="300"/>
+</p>
+
+---
+
+- **Branch HMI** (Human-Machine Interface):  
+  Provides a user interface for controlling the system and displaying key information.
+
+---
+
+- **Branch INT_LTS**:  
+  Serves as the interface for integrating the **LoRa TTGO-T BEAM** communication module.
 
 ---
 
