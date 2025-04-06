@@ -1,5 +1,8 @@
 # Avionic Marsaut 0
 
+> *© 2023 Paul Miailhe, all rights reserved.*  
+> *Material licensed under [→ CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0)*
+
 ## Experimental Rocket Avionics for Marsaut 0
 
 The **Marsaut 0 avionics system**, designed and developed by Paul Miailhe in 2021, was successfully launched during the C'Space event. This project is licensed under **CC BY-NC-SA 4.0**.
