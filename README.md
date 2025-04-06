@@ -1,6 +1,6 @@
 # Avionic Marsaut 0
 
-> *© 2023 Paul Miailhe, all rights reserved.*  
+> *© 2021 Paul Miailhe, all rights reserved.*  
 > *Material licensed under [→ CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0)*
 
 ## Experimental Rocket Avionics for Marsaut 0
